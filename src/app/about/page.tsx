@@ -192,6 +192,17 @@ export default function About() {
                 )}
               </Row>
             )}
+            <Row className={styles.blockAlign} paddingTop="8" fitWidth>
+              <Button
+                href="/keane-dasilva-resume.pdf"
+                download
+                prefixIcon="document"
+                label="Download résumé"
+                size="s"
+                weight="default"
+                variant="primary"
+              />
+            </Row>
           </Column>
 
           {about.intro.display && (

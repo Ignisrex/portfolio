@@ -1,0 +1,62 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  will-change: transform;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: var(--brand-alpha-medium);
+    box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.45);
+  }
+}
+
+// Full-card invisible link layer. Sits above the body text but below the
+// action icons so clicking anywhere on the card navigates, while the
+// GitHub / live-demo icons still work on their own.
+.cardLink {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.cover {
+  overflow: hidden;
+}
+
+.coverMedia {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+
+  .card:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.body {
+  position: relative;
+  z-index: 0;
+}
+
+.actions {
+  position: relative;
+  z-index: 2;
+
+  a:hover {
+    box-shadow: 0 0 0 1px var(--brand-alpha-medium);
+  }
+}
+
+.readMore {
+  position: relative;
+  z-index: 0;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+
+  .card:hover & {
+    transform: translateX(4px);
+  }
+}

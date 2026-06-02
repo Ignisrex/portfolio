@@ -1,0 +1,52 @@
+---
+title: "EcoSight: A Biodiversity Data Platform"
+publishedAt: "2025-03-15"
+summary: "Leading development of a biodiversity data platform that assesses ecosystem damage and supports environmental policy decisions, built on Go and Python microservices."
+images:
+  - "/images/projects/project-01/cover-01.jpg"
+  - "/images/projects/project-01/cover-02.jpg"
+tags:
+  - "Go"
+  - "Python"
+  - "Microservices"
+  - "AWS"
+  - "Concurrency"
+hideCaseStudy: true
+# Add a public repo and/or live URL here to surface the icons on the card:
+# github: "https://github.com/Ignisrex/your-repo"
+# link: "https://your-live-demo.com"
+---
+
+## Overview
+
+EcoSight is a biodiversity data platform built at Kee Farms Foundation to assess
+ecosystem damage and support environmental policy decisions. As lead engineer, I
+own the architecture that ingests, transforms, and aggregates global ecosystem
+services datasets into actionable environmental indicators.
+
+## Key Contributions
+
+- **Microservice architecture**: Architected and implemented Go and Python
+  microservices for ingesting, transforming, and aggregating large ecosystem
+  datasets from heterogeneous global sources.
+- **Job orchestration engine**: Designed a modular orchestration engine backed by
+  a bounded worker pool to execute InVEST model workloads, with concurrency
+  control, retry limits, and failure handling so long-running scientific jobs
+  stay reliable under load.
+- **Data pipeline**: Built the pipeline that executes ecosystem service models and
+  aggregates their outputs into the environmental indicators policymakers depend
+  on.
+
+## Technologies Used
+
+- **Go & Python**: For high-throughput ingest services and scientific model
+  execution.
+- **Bounded worker pools**: For deterministic concurrency control across
+  expensive model runs.
+- **AWS**: For scalable, resilient cloud infrastructure.
+
+## Outcome
+
+The platform turns fragmented ecosystem data into consistent indicators that
+inform environmental policy, with an orchestration layer designed to scale as new
+datasets and models are added.

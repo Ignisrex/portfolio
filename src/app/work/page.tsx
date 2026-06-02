@@ -1,4 +1,4 @@
-import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
+import { Column, Heading, RevealFx, Text, Meta, Schema } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
 import { Projects } from "@/components/work/Projects";
 
@@ -28,9 +28,18 @@ export default function Work() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Heading marginBottom="l" variant="heading-strong-xl" align="center">
-        {work.title}
-      </Heading>
+      <Column fillWidth maxWidth="s" horizontal="center" align="center" gap="16" marginBottom="xl">
+        <RevealFx fillWidth horizontal="center" translateY="4">
+          <Heading variant="display-strong-m" align="center">
+            Projects
+          </Heading>
+        </RevealFx>
+        <RevealFx fillWidth horizontal="center" translateY="8" delay={0.1}>
+          <Text variant="heading-default-l" onBackground="neutral-weak" wrap="balance">
+            A collection of projects exploring backend systems, real-time workflows, developer tools, game dev, and product-focused engineering.
+          </Text>
+        </RevealFx>
+      </Column>
       <Projects />
     </Column>
   );

@@ -31,11 +31,6 @@ const social: Social = [
     icon: "linkedin",
     link: "https://www.linkedin.com/in/keane-dasilva-00556910b/",
   },
-  /*{
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  }*/,
   {
     name: "Email",
     icon: "email",
@@ -54,14 +49,14 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">EcoIndex</strong>{" "}
+        <strong className="ml-4">EcoSight</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/ecoindex-biodiversity-platform",
+    href: "/work/ecosight-biodiversity-platform",
   },
   subline: (
     <>
@@ -102,6 +97,30 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
+      {
+        company: "Kee Farms Foundation",
+        timeframe: "Mar 2025 - Present",
+        role: "Lead Software Engineer",
+        achievements: [
+          <>
+            Leading development of EcoSight, a biodiversity data platform for assessing ecosystem
+            damage and supporting environmental policy decisions.
+          </>,
+          <>
+            Architected and implemented Golang and Python microservices to ingest, transform, and
+            aggregate global ecosystem services datasets.
+          </>,
+          <>
+            Developed a modular job orchestration engine using a bounded worker pool to execute
+            InVEST model workloads with concurrency control, retry limits, and failure handling.
+          </>,
+          <>
+            Designed the data pipeline used to execute ecosystem service models and aggregate
+            outputs into environmental indicators.
+          </>,
+        ],
+        images: [],
+      },
       {
         company: "Ritchie Bros Auctioneer",
         timeframe: "Jan 2023 - Mar 2025",

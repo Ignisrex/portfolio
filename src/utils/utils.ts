@@ -16,8 +16,11 @@ type Metadata = {
   image?: string;
   images: string[];
   tag?: string;
+  tags: string[];
   team: Team[];
   link?: string;
+  github?: string;
+  hideCaseStudy?: boolean;
 };
 
 import { notFound } from "next/navigation";
@@ -45,8 +48,11 @@ function readMDXFile(filePath: string) {
     image: data.image || "",
     images: data.images || [],
     tag: data.tag || [],
+    tags: data.tags || [],
     team: data.team || [],
     link: data.link || "",
+    github: data.github || "",
+    hideCaseStudy: data.hideCaseStudy || false,
   };
 
   return { metadata, content };

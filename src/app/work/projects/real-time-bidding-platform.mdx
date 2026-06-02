@@ -1,0 +1,53 @@
+---
+title: "Real-Time Auction Bidding Platform"
+publishedAt: "2025-01-10"
+summary: "High-throughput bidding microservices handling thousands of auction events per second at low-millisecond latency, powering simulcast in-person and online auctions."
+images:
+  - "/images/projects/project-01/cover-03.jpg"
+  - "/images/projects/project-01/cover-04.jpg"
+tags:
+  - "Java"
+  - "Spring Boot"
+  - "Redis"
+  - "ActiveMQ"
+  - "Distributed Systems"
+hideCaseStudy: true
+# Proprietary work project — add a repo/live URL here only if one is public.
+# github: ""
+# link: ""
+---
+
+## Overview
+
+At Ritchie Bros, I built and optimized the real-time bidding microservices behind
+simulcast auctions — events that run in person and online simultaneously. The
+system handles thousands of auction events per second while holding
+low-millisecond response times.
+
+## Key Contributions
+
+- **Low-latency bidding**: Sustained low-millisecond response times under heavy
+  concurrency using in-memory caching and thread-safe event handling.
+- **Legacy modernization**: Led the refactor and modularization of legacy backend
+  systems powering simulcast auctions, improving maintainability and clarity
+  within a distributed architecture.
+- **Virtual waiting room**: Implemented a waiting-room mechanism to absorb traffic
+  surges during peak login periods, using rate-limiting, queuing, and request
+  deferral to preserve backend stability and guarantee fairness by arrival order.
+- **Event-driven fairness**: Built event-driven state machines to coordinate
+  concurrent bid flows and guarantee fairness under load.
+- **GDPR compliance**: Collaborated with product and legal to refactor core data
+  handling pipelines for GDPR compliance while maintaining system integrity and
+  availability.
+
+## Technologies Used
+
+- **Java & Spring Boot**: For the core bidding and auction services.
+- **Redis**: For in-memory caching and low-latency state.
+- **ActiveMQ**: For distributed, event-based auction workflows.
+
+## Outcome
+
+A resilient bidding platform that stays fair and responsive even during the
+highest-traffic auction moments, with a modernized codebase that is far easier to
+extend and operate.
