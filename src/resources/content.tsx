@@ -221,8 +221,16 @@ const about: About = {
             icon: "java",
           },
           {
+            name: "Go",
+            icon: "go",
+          },
+          {
             name: "Python",
             icon: "python",
+          },
+          {
+            name: "TypeScript",
+            icon: "typescript",
           },
           {
             name: "JavaScript",
@@ -240,6 +248,10 @@ const about: About = {
           {
             name: "AWS",
             icon: "aws",
+          },
+          {
+            name: "Azure",
+            icon: "azure",
           },
           {
             name: "Docker",
@@ -261,6 +273,10 @@ const about: About = {
           {
             name: "React",
             icon: "react",
+          },
+          {
+            name: "JavaScript",
+            icon: "javascript",
           },
           {
             name: "TypeScript",
