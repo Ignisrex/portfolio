@@ -28,7 +28,7 @@ export default function Work() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Column fillWidth maxWidth="s" horizontal="center" align="center" gap="16" marginBottom="xl">
+      <Column fillWidth horizontal="center" align="center" gap="16" marginBottom="xl">
         <RevealFx fillWidth horizontal="center" translateY="4">
           <Heading variant="display-strong-m" align="center">
             Projects

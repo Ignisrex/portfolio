@@ -45,6 +45,9 @@ export default async function RootLayout({
       )}
     >
       <head>
+        {/* Suppress the browser tab icon for now — empty data URI means no favicon
+            is requested/shown. The original icon is kept at src/app/favicon.ico.disabled. */}
+        <link rel="icon" href="data:," />
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{

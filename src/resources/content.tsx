@@ -44,7 +44,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Designing and scaling cloud-based systems</>,
+  headline: <>Building the systems behind fast-moving products</>,
   featured: {
     display: true,
     title: (
@@ -60,8 +60,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Keane, a software engineer with over 7 years of experience building
-      <br /> resilient microservices and scaling cloud-based systems.
+      I’m Keane, a senior software engineer with 9+ years of experience creating
+      <br /> backend services, APIs, and cloud infrastructure for teams moving from idea to scale.
     </>
   ),
 };
@@ -80,7 +80,7 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendly.com/dasilvakeaned/30min",
   },
   intro: {
     display: true,

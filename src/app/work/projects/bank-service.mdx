@@ -1,0 +1,51 @@
+---
+title: "Bank Service: Secured Banking REST API"
+publishedAt: "2023-01-01"
+summary: "A Spring Boot banking API with JWT-secured accounts, money transfers with transaction logging, and card management, fully containerized with Docker."
+images:
+  - "/images/projects/gradient-indigo.jpg"
+tags:
+  - "Java"
+  - "Spring Boot"
+  - "JWT"
+  - "REST API"
+  - "Docker"
+  - "JUnit"
+github: "https://github.com/Ignisrex/bank-service"
+hideCaseStudy: true
+# link: "https://your-live-demo.com"
+---
+
+## Overview
+
+Bank Service is a Spring Boot REST API that models core banking operations end to
+end: user registration and login, account management, money transfers between
+accounts, transaction history, and debit/credit card handling. Authentication and
+authorization are enforced with JWT, and passwords are hashed with BCrypt.
+
+## Key Contributions
+
+- **Secured authentication**: Implemented JWT-based auth with BCrypt password
+  hashing, guarding account and transaction endpoints behind authenticated access.
+- **Transactional money transfers**: Built fund-transfer flows that move money
+  between accounts while logging every transaction, keeping balances and history
+  consistent.
+- **Card management**: Added debit/credit card creation, validation, and
+  management alongside statement generation and transaction history.
+- **Tested and containerized**: Wrote JUnit integration tests against an in-memory
+  database and shipped the service with Docker and Docker Compose for one-command
+  local startup, plus a Postman collection for exercising the API.
+
+## Technologies Used
+
+- **Java 17 & Spring Boot 3**: For the core API, security, and persistence layers.
+- **Spring Data JPA / Hibernate**: For the account, transaction, and card data
+  model.
+- **JWT & BCrypt**: For stateless authentication and secure credential storage.
+- **Docker & Docker Compose**: For reproducible local environments.
+
+## Outcome
+
+A complete, security-conscious banking microservice that demonstrates clean
+layered architecture, transactional integrity around money movement, and a
+fully containerized, testable developer workflow.
